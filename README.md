@@ -13,7 +13,7 @@ curl https://get.acme.sh | sh -s email=my@example.com
 Install acme2pc.sh from this Repo to a directory of your choice:
 
 ```bash
-curl https://....
+curl -o acme2pc.sh https://raw.githubusercontent.com/wolfganghuse/acme2pc/main/acme2pc.sh
 chmod +x acme2pc.sh
 ```
 
