@@ -5,16 +5,16 @@
 #######################
 
 #######################
-# Usage: certs2pc.sh -u pc_user -p pc_pass -h IP/Hostname of PrismCentral -d Domain used for LE
+# Usage: acme2pc.sh -u pc_user -p pc_pass -h IP/Hostname of PrismCentral -d Domain used for LE
 # Parameters could also exist as EXPORT (USERNAME PASSWORD PRISM_CENTRAL DOMAIN)
 #######################
 
-# Load Secrets from Local .secret/certs2pc.env
+# Load Secrets from Local .secret/acme2pc.env
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-if [ -f $SCRIPT_DIR/.secret/certs2pc.env ]; then
+if [ -f $SCRIPT_DIR/.secret/acme2pc.env ]; then
     # Load Environment Variables
-    export $(cat $SCRIPT_DIR/.secret/certs2pc.env | grep -v '#' | awk '/=/ {print $1}')
+    export $(cat $SCRIPT_DIR/.secret/acme2pc.env | grep -v '#' | awk '/=/ {print $1}')
 fi
 
 # Command-Line-Options will override Settings
