@@ -1,5 +1,5 @@
 # acme2pc
-Helper Script to publish LetsEncrypt ACME-Certs to Nutanix PrismCentral
+Helper Script to publish LetsEncrypt ACME-Certs to Nutanix PrismCentral (and PrismElement)
 
 ### Pre-Requirement: Install acme.sh
 
@@ -40,8 +40,8 @@ acme2pc.sh accepts the following Paramters:
 | ENV-Parameter | CLI Flag| Details|
 |---------------|---------|--------|
 |DOMAIN|-d|domain (from acme.sh client)|
-|PRISMCENTRAL|-h|PrismCentral IP/Hostname|
-|USERNAME|-u|PrismCentral Username|
-|PASSWORD|-p|PrismCentral Password|
+|PRISMCENTRAL|-h|Prism IP/Hostname|
+|USERNAME|-u|Prism Username|
+|PASSWORD|-p|Prism Password|
 
 You can also create a acme2pc.env File in a .secret sub-directory (commonly used for Username/Password)
